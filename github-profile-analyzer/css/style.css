@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+main {
+  max-width: 1050px;
+  margin: auto;
+  padding: 45px 20px;
+}
+h1 {
+  text-align: center;
+  margin: 0;
+}
+.sub {
+  text-align: center;
+  color: #667085;
+}
+form {
+  max-width: 650px;
+  margin: 28px auto 10px;
+  display: flex;
+  gap: 10px;
+}
+input {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  font-size: 16px;
+}
+button {
+  padding: 0 24px;
+  border: 0;
+  border-radius: 10px;
+  background: #111827;
+  color: white;
+  font-weight: bold;
+}
+.hidden {
+  display: none;
+}
+#msg {
+  text-align: center;
+  min-height: 24px;
+  color: #b42318;
+}
+.profile,
+article,
+.stats div {
+  background: white;
+  border-radius: 15px;
+  padding: 22px;
+  box-shadow: 0 4px 18px #0001;
+}
+.profile {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.profile img {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+}
+.profile h2 {
+  margin: 0;
+}
+.profile p {
+  color: #667085;
+}
+.profile a {
+  color: #175cd3;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin: 18px 0;
+}
+.stats div {
+  text-align: center;
+}
+.stats b {
+  display: block;
+  font-size: 25px;
+}
+.stats span {
+  color: #667085;
+  font-size: 13px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+.repos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.repo {
+  border: 1px solid #eaecf0;
+  border-radius: 10px;
+  padding: 14px;
+}
+.repo a {
+  color: #175cd3;
+  text-decoration: none;
+}
+.tag {
+  display: inline-block;
+  background: #eef2ff;
+  padding: 4px 8px;
+  border-radius: 20px;
+  margin: 4px;
+  font-size: 12px;
+}
+.lang {
+  margin: 10px 0;
+}
+.bar {
+  height: 7px;
+  background: #eaecf0;
+  border-radius: 10px;
+}
+.bar span {
+  display: block;
+  height: 100%;
+  background: #111827;
+  border-radius: 10px;
+}
+@media (max-width: 700px) {
+  form,
+  .profile {
+    flex-direction: column;
+  }
+  .search-box button,
+  button {
+    width: 100%;
+    padding: 13px;
+  }
+  .stats,
+  .grid,
+  .repos {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid,
+  .repos {
+    grid-template-columns: 1fr;
+  }
+}
